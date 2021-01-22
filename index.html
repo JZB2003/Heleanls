@@ -1,49 +1,59 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-
-<Link Rel="SHORTCUT ICON" href="./ICO.ico">
-
+<Link Rel="SHORTCUT ICON" href="./Head.ico">
 <meta charset="utf-8">
-
 <title>Heleanls的个人测试网站</title>
-
+<script>
+function clickCounter()
+{
+	if(typeof(Storage)!=="undefined")
+	{
+		if (localStorage.clickcount)
+		{
+			localStorage.clickcount=Number(localStorage.clickcount)+1;
+		}
+		else
+		{
+			localStorage.clickcount=1;
+		}
+		document.getElementById("result").innerHTML=" 点击了按钮 " + localStorage.clickcount + " 次 ";
+	}
+	else
+	{
+		document.getElementById("result").innerHTML="对不起，您的浏览器不支持 web 存储。";
+	}
+}
+</script>
 </head>
-
 <body>
- 
-<h1>欢迎</h1>
-
+<style>
+ body{
+ background-color: #00FFFF
+ }
+ </style>
+<center><h1><strong>欢迎</strong></h1></center>
  <hr>
- 
+ <h2 style="background-color:#C0C0C0">主要</h2>
+ <hr>
+ <p>暂无</p>
+ <hr>
  <h2 style="background-color:#C0C0C0">关于</h2>
- 
  <hr>
- 
  <p>本站建于2021.1.22</p>
- 
  <hr>
- 
- <p>源码版本:1.0(beta)</p>
- 
- <hr>
- 
  <p>自学网站:<a href="https://www.runoob.com/">菜鸟教程</a></p>
- 
  <hr>
- 
+ <p><button onclick="clickCounter()" type="button">Test</button></p>
+<div id="result"></div>
+<p>点击该按钮查看计数器的增加。</p>
+<p>关闭浏览器选项卡(或窗口),重新打开此页面,计数器将继续计数(非重置，测试用)。</p>
  <audio controls>
- 
   <source src="music.ogg" type="audio/ogg">
-  
   <source src="music.mp3" type="audio/mpeg">
-  
 您的浏览器不支持 audio 元素。
-
 </audio>
-
+<center><p>Copyright ©2021 Heleanls</p></center>
+<center><p>Version:1.0.1(beta)</p></center>
 </body>
-
 </html>

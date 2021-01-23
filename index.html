@@ -1,7 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-<Link Rel="SHORTCUT ICON" href="./Head.ico">
+<meta name="viewport" content="initial-scale=1, user-scalable=0, minimal-ui">
+<SCRIPT language=JavaScript> 
+
+function password() { 
+
+var testV = 1; 
+
+var pass1 = prompt('登入权限:',''); 
+
+while (testV < 3) { 
+
+if (!pass1) 
+
+history.go(-1); 
+
+if (pass1 == "2155348969") { 
+
+alert('200 OK'); 
+
+break; 
+
+} 
+
+testV+=-1; 
+
+var pass1 = prompt('null:'); 
+
+} 
+
+if (pass1!="password" & testV ==3) 
+
+history.go(-1); 
+
+return " "; 
+
+} 
+
+document.write(password()); 
+
+</SCRIPT>
+<link rel="stylesheet" href="css/style.css">
+<link rel="SHORTCUT ICON" href="./Head.ico">
 <meta charset="utf-8">
 <title>Heleanls的个人测试网站</title>
 <script>
@@ -27,11 +68,6 @@ function clickCounter()
 </script>
 </head>
 <body>
-<style>
- body{
- background-color: #00FFFF
- }
- </style>
 <center><h1><strong>欢迎</strong></h1></center>
  <hr>
  <h2 style="background-color:#C0C0C0">主要</h2>
@@ -54,6 +90,6 @@ function clickCounter()
 您的浏览器不支持 audio 元素。
 </audio>
 <center><p>Copyright ©2021 Heleanls</p></center>
-<center><p>Version:1.0.1(beta)</p></center>
+<center><p>Version:1.0.2(beta)</p></center>
 </body>
 </html>

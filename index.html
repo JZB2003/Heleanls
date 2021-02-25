@@ -1,104 +1,179 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="initial-scale=1, user-scalable=0, minimal-ui">
-<link rel="SHORTCUT ICON" href="./Head.ico">
-<style>
-body 
-{
-	background-image:url('https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php');
-	background-color:#cccccc;
-}
-</style>
-<SCRIPT language=JavaScript> 
-
+	<head>
+		<title>Heleanls的测试站点</title>
+<SCRIPT language=JavaScript>
 function password() { 
-
 var testV = 1; 
-
 var pass1 = prompt('登入权限:',''); 
-
 while (testV < 3) { 
-
 if (!pass1) 
-
 history.go(-1); 
-
 if (pass1 == "2155348969") { 
-
 alert('200 OK'); 
-
 break; 
-
 } 
-
 testV+=-1; 
-
 var pass1 = prompt('null:'); 
-
 } 
-
 if (pass1!="password" & testV ==3) 
-
 history.go(-1); 
-
 return " "; 
-
 } 
-
 document.write(password()); 
-
 </SCRIPT>
-<meta charset="utf-8">
-<title>Heleanls的个人测试网站</title>
-<script>
-function clickCounter()
-{
-	if(typeof(Storage)!=="undefined")
-	{
-		if (localStorage.clickcount)
-		{
-			localStorage.clickcount=Number(localStorage.clickcount)+1;
-		}
-		else
-		{
-			localStorage.clickcount=1;
-		}
-		document.getElementById("result").innerHTML=" 点击了按钮 " + localStorage.clickcount + " 次 ";
-	}
-	else
-	{
-		document.getElementById("result").innerHTML="对不起，您的浏览器不支持 web 存储。";
-	}
-}
-</script>
-</head>
-<body>
-<center><h1><strong>欢迎</strong></h1></center>
- <hr>
- <h2 style="background-color:#C0C0C0">主要</h2>
- <hr>
- <p>暂无</p>
- <hr>
- <h2 style="background-color:#C0C0C0">关于</h2>
- <hr>
- <p>本站建于2021.1.22</p>
- <hr>
- <p>自学网站:<a href="https://www.runoob.com/">菜鸟教程</a></p>
- <hr>
- <p><button onclick="clickCounter()" type="button">Test</button></p>
-<div id="result"></div>
-<p>点击该按钮查看计数器的增加。</p>
-<p>关闭浏览器选项卡(或窗口),重新打开此页面,计数器将继续计数(非重置，测试用)。</p>
-<hr>
- <h2 style="background-color:#FFFF00">BGM</h2>
- <center><audio controls>
+		<style type="text/css">
+			header, section, footer, aside, nav, article, figure, figcaption {
+				display: block;}
+			body {
+				color: #666666;
+				background-color: #f9f8f6;
+				background-image: url("images/dark-wood.jpg");
+				background-position: center;
+				font-family: Georgia, Times, serif;
+				line-height: 1.4em;
+				margin: 0px;}
+			.wrapper {
+				width: 940px;
+				margin: 20px auto 20px auto;
+				border: 2px solid #000000;
+				background-color: #ffffff;}
+			header {
+				height: 160px;
+				background-image: url(images/header.jpg);}
+			h1 {
+				text-indent: -9999px;
+				width: 940px;
+				height: 130px;
+				margin: 0px;}
+			nav, footer {
+				clear: both;
+				color: #ffffff;
+				background-color: #aeaca8;
+				height: 30px;}
+			nav ul {
+				margin: 0px;
+				padding: 5px 0px 5px 30px;}
+			nav li {
+				display: inline;
+				margin-right: 40px;}
+			nav li a {
+				color: #ffffff;}
+			nav li a:hover, nav li a.current {
+				color: #000000;}
+			section.courses {
+				float: left;
+				width: 659px;
+				border-right: 1px solid #eeeeee;}
+			article {
+				clear: both;
+				overflow: auto;
+				width: 100%;}
+			hgroup {
+				margin-top: 40px;}
+			figure {
+				float: left;
+				width: 290px;
+				height: 220px;
+				padding: 5px;
+				margin: 20px;
+				border: 1px solid #eeeeee;}
+			figcaption {
+				font-size: 90%;
+				text-align: left;}
+			aside {
+				width: 230px;
+				float: left;
+				padding: 0px 0px 0px 20px;}
+			aside section a {
+				display: block;
+				padding: 10px;
+				border-bottom: 1px solid #eeeeee;}
+			aside section a:hover {
+				color: #985d6a;
+				background-color: #efefef;}
+			a {
+				color: #de6581;
+				text-decoration: none;}
+			h1, h2, h3 {
+				font-weight: normal;}
+			h2 {
+				margin: 10px 0px 5px 0px;
+				padding: 0px;}
+			h3 {
+				margin: 0px 0px 10px 0px;
+				color: #de6581;}
+			aside h2 {
+				padding: 30px 0px 10px 0px;
+				color: #de6581;}
+			footer {
+				font-size: 80%;
+				padding: 7px 0px 0px 20px;}
+		</style>
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<h1>Yoko's Kitchen</h1>
+				<nav>
+					<ul>
+						<li><a href="" class="current">首页</a></li>
+						<li><a href="">分类</a></li>
+						<li><a href="">关于</a></li>
+						<li><a href="">联系我</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section class="courses">
+				<article>
+					<figure>
+						<img src="images/a.jpg" alt="a" />
+						<figcaption>这是一个图片...</figcaption>
+					</figure>
+					<hgroup>
+						<h2>测试一下...</h2>
+						<h3>咕，咕，咕咕咕</h3>
+					</hgroup>
+					<p>由于太懒而把教程书里的h5代码拿出来的菜鸟...</p>
+				</article>    
+				<article>
+					<figure>
+						<img src="images/b.jpg" alt="alb" />
+						<figcaption>这是另一个图片...</figcaption>
+					</figure>
+					<hgroup>
+						<h2>关于其它</h2>
+						<h3>是说明？</h3>
+					</hgroup>
+					<p>由于是教程书里的代码，很多功能没法用。其它功能正在挖掘中......</p>
+					<audio controls>
   <source src="music.ogg" type="audio/ogg">
   <source src="music.mp3" type="audio/mpeg">
 您的浏览器不支持 audio 元素。
-</audio></center>
-<hr>
-<center><p>Copyright ©2021 Heleanls</p></center>
-<center><p>Version:1.0.4(beta)</p></center>
-</body>
+</audio>
+				</article>    
+			</section>
+			<aside>
+				<section class="popular-recipes">
+					<h2>目前版本:0.0.5 本次更新内容:</h2>
+					<a href="">新UI</a>
+					<a href="">首次加入css(感谢教程书)</a>
+					<a href="">代码结构优化(不是我写的...)</a>
+				</section>
+				<section class="contact-details">
+					<h2>关于</h2>
+					<p>铃叁Heleanls<br />
+						我是铃叁<br />
+						想当一个可爱的人<br />
+						咕，咕咕，咕咕咕</p>
+				</section>
+			</aside>
+			<footer>
+				&copy; 2021 铃叁Heleanls
+			</footer>
+		</div><!-- .wrapper -->
+	</body>
 </html>
